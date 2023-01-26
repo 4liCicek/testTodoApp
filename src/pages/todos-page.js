@@ -1,6 +1,5 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
-import TodoHeader from "../components/todo-header/todo-header";
 import TodoInput from "../components/todo-input/todo-input";
 import TodoList from "../components/todo-list/todo-list";
 import TodoStatus from "../components/todo-status/todo-status";
@@ -8,21 +7,21 @@ import TodoStatus from "../components/todo-status/todo-status";
 const TodosPage = () => {
   const [todos, setTodos] = useState([]);
 
-  const addTodo = useCallback((title) => {
-    setTodos((prev) => [
-      ...prev,
+  const addTodo = (title) => {
+    setTodos([
+      ...todos,
       {
         id: Date.now(),
         title: title,
         completed: false,
       },
     ]);
-  });
+  };
 
-  const removeTodo = useCallback((id) => {
+  const removeTodo = (id) => {
     const newTodos = todos.filter((item) => item.id !== id);
     setTodos(newTodos);
-  });
+  };
 
   const setState = (id) => {
     const newTodos = todos.map((item) =>
