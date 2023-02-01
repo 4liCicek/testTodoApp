@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ContactPage = () => {
   return (
@@ -6,4 +6,4 @@ const ContactPage = () => {
   )
 }
 
-export default ContactPage
+export default ContactPage;
