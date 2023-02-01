@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TodoStatus = ({count}) => {
   return (
@@ -6,4 +6,4 @@ const TodoStatus = ({count}) => {
   )
 }
 
-export default TodoStatus
+export default TodoStatus;
