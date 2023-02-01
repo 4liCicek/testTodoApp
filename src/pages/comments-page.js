@@ -1,5 +1,5 @@
-import React from 'react'
-import Comments from '../components/comments/comments'
+import React from 'react';
+import Comments from '../components/comments/comments';
 
 const CommentsPage = () => {
   return (
@@ -9,4 +9,4 @@ const CommentsPage = () => {
   )
 }
 
-export default CommentsPage
+export default CommentsPage;
