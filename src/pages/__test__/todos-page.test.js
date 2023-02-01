@@ -50,5 +50,5 @@ describe("deleting functionalty", ()=>{
         const delButton = screen.getByRole("button", { name: "❌"});
         userEvent.click(delButton);
         expect(listItemEl).not.toBeInTheDocument();
-    })
+    });
 });
